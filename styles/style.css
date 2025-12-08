@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9F8F4;
+}
+
+
+.container {
+    max-width: 1140;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__nav {
+    background: #f9f8f4;
+    border: 1px solid #242424;
+    padding: 24px 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 80px;
+    margin-right: 434px;
+    margin-left: 425px;
+}
+
+.logo {
+    padding-left: 108px;
+}
+
+.header__nav-link {
+    display: inline-block;
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.header__nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #242424;
+    transition: 500ms;
+}
+
+.header__nav-link:hover::after {
+    width: 100%;
+}
+
+.header__nav-icons {
+    display: flex;
+    gap: 60px;
+    padding-right: 108px;
+    justify-content: center;
+    align-items: start;
+}
+
+.intro {
+    background: url(../images/intro.jpg) no-repeat center/cover;
+    height: 1000px;
+}
+
+.container__intro {
+    padding-top: 314px;
+    padding-left: 108px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__title {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 74px;
+    text-transform: uppercase;
+    color: #eee;
+    max-width: 1159px;
+    width: 100%;
+}
+
+.intro__text {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    color: #eee;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    max-width: 984px;
+    width: 100%;
+}
+
+.intro__link {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    color: #eee;
+    max-width: 264px;
+    width: 100%;
+    height: 80px;
+    border: 2px solid #EEEEEE;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.container__collection {
+    padding-top: 140px;
+    padding-left: 108px;
+}
+
+
+
+.title {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #242424;
+    position: relative;
+    display: inline-block;
+}
+
+.bestseller__title {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #242424;
+    position: relative;
+    display: inline-block
+}
+
+.subtitle {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    max-width: 144px;
+    width: 100%;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    height: 2px;
+    background-color: #242424;
+}
+
+.bestseller__title::after {
+    content: "";
+    display: block;
+    max-width: 144px;
+    width: 100%;
+    position: absolute;
+    left: 250px;
+    top: 50%;
+    height: 2px;
+    background-color: #242424;
+}
+
+
+.collection__catalog {
+    display: grid;
+    grid-template-columns: 840px 840px;
+    grid-template-rows: 400px 400px;
+    column-gap: 20px;
+    row-gap: 46px;
+    margin-top: 60px;
+
+}
+
+
+
+.catalog-item {
+    position: relative;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+
+
+.catalog-item__discount {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 120px;
+    height: 60px;
+    background: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+}
+
+
+
+.catalog-item__title {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+    margin-bottom: 20px;
+
+}
+
+.catalog-item__info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.catalog-item__label {
+    font-family: "ShareTech";
+    font-size: 16px;
+    color: #f9f8f4;
+    text-transform: uppercase;
+}
+
+.catalog-item__value {
+    font-family: "ShareTech";
+    font-size: 16px;
+    color: #f9f8f4;
+    text-transform: uppercase;
+}
+
+.catalog-item__price {
+    font-family: "ShareTech";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+    margin-top: 45px;
+
+}
+
+.catalog-item-sakura {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(../images/sakura.jpg) no-repeat center/cover;
+}
+
+.catalog-item-tokyo {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(../images/tokyo.jpg) no-repeat center/cover;
+}
+
+.catalog-item-fuji {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 846px;
+    background: url(../images/fuji.jpg) no-repeat center/cover;
+}
+
+.container__bestseller {
+    padding-top: 140px;
+    padding-left: 108px;
+
+}
+
+
+.bestseller__grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 552px);
+    grid-template-rows: repeat(2, 800px);
+    gap: 24px;
+}
+
+.bestseller-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.bestseller-card-1 {
+    background-image: url("../images/best1.jpg");
+}
+
+.bestseller-card-2 {
+    background-image: url("../images/best2.jpg");
+}
+
+.bestseller-card-3 {
+    background-image: url("../images/best3.jpg");
+}
+
+.bestseller-card-4 {
+    background-image: url("../images/best4.jpg");
+}
+
+.bestseller-card-5 {
+    background-image: url("../images/best5.jpg");
+}
+
+.bestseller-card-6 {
+    background-image: url("../images/best6.jpg");
+}
+
+
+.bestseller-card__discount {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 120px;
+    height: 60px;
+    background: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "ShareTech";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+}
+
+
+.bestseller-card__icons {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-box img {
+    width: 24px;
+    height: 24px;
+}
+
+.bestseller-card__title {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+}
+
+.bestseller-card__info1 {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+    margin-top: 40px;
+
+}
+
+.bestseller-card__price {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+}
+
+.bestseller-card__btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #fff;
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+}
+
+.bestseller-card__info2 {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f9f8f4;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.about-us {
+    padding-top: 140px;
+    padding-left: 108px;
+}
+
+.about-us__title::after {
+    content: "";
+    display: block;
+    max-width: 144px;
+    width: 100%;
+    position: absolute;
+    left: 190px;
+    top: 50%;
+    height: 2px;
+    background-color: #242424;
+}
+
+.about-us__text {
+    margin-bottom: 60px;
+}
+
+.about-us__img {
+    max-width: 1704px;
+    width: 100%;
+    height: 600;
+    padding-bottom: 140px;
+}
+
+
+.footer {
+    margin-top: 120px;
+    padding: 137px 108px;
+    background: #F9F8F4;
+    border-top: 1px solid #242424;
+
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.footer__nav-list {
+    display: flex;
+    gap: 140px;
+    list-style: none;
+}
+
+.footer__nav-list-link {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 107px;
+}
+
+.footer__social-title {
+    font-family: "ShareTech";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90%;
+    color: #242424;
+    margin-bottom: 20px;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
